@@ -8,11 +8,12 @@ def join_ingredients(src)
   # As such, there should be a new String for each inner array, or pair
   
   array = []
-  
-  src.each do |help, value|
-    array.push("I love #{help} and #{value} on my pizza")
-  end
-  array
+  row = 0 
+  while row < src.length do 
+
+  p "I love #{src[row][0]} and #{src[row][1]} on my pizza"
+
+  row += 1
 end
 
 def find_greater_pair(src)
